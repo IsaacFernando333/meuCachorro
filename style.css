@@ -159,3 +159,19 @@ body {
     width: 400px;
     border-radius: 20px;
 }
+
+.kanye {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.kanye h1{
+    color: #ffffff;
+}
+
+.frase {
+    color: #444343;
+}
