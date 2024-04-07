@@ -17,7 +17,7 @@ body {
     align-items: center;
     /* justify-content: center; */
     background-image: url(./media/planet-volumes-4IrVnSpwk48-unsplash.jpg);
-    background-repeat: no-repeat;
+    background-repeat:repeat;
     background-size:cover;
 }
 
@@ -25,7 +25,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #1f1f1f; */
     background: rgba(31, 31, 31, 0.46);
     backdrop-filter: blur(6.4px);
     border-radius: 20px;
@@ -86,7 +85,6 @@ body {
     font-size: 40px;
     width: 220px;
     padding: 10px;
-    /* background-color: #1f1f1f; */
     background: rgba(31, 31, 31, 0.46);
     backdrop-filter: blur(6.4px);
     border-radius: 20px;
@@ -96,6 +94,7 @@ body {
 .icones {
     cursor: pointer;
     color: #ffffff;
+    transition: .5s;
 }
 
 .face, .github {
@@ -132,22 +131,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .5s;
 }
 
 .links:hover {
     transform: scale(1.1);
-}
-
-.mudaModo {
-    border-radius: 10px;
-    border: 1px #1f1f1f solid;
-    background-color: #ffffff;
-    width: 50px;
-    outline: none;
-    position: fixed;
-    right: 10px;
-    top: 20px;
-    cursor: pointer;
 }
 
 .direciona-link {
@@ -174,4 +162,42 @@ body {
 
 .frase {
     color: #444343;
+}
+
+@media (max-width: 700px) {
+    .apresentacao {
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        margin-top: 0;
+        padding: 20px;
+    }
+
+    .nomeeinfo {
+        width: 60%;
+        margin-left: 20px;
+    }
+
+    .foto {
+        height: 100px;
+        width: 100px;
+    }
+
+    .nome {
+        width: fit-content;
+        font-size: medium;
+        border-radius: 6px;
+    }
+
+    .info {
+        border-radius: 6px;
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 450px) {
+    .links {
+        width: 90%;
+    }
 }
